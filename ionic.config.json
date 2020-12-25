@@ -1,0 +1,7 @@
+{
+  "name": "disg",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
