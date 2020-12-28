@@ -2,11 +2,7 @@
   <base-layout page-title="Schnelltest: Verkäufertyp">
     <ion-content class="ion-padding">
 
-      <form @submit.prevent="submitForm">
-
-        <quicktest-question :questions="questions"></quicktest-question>
-
-      </form>
+      <quicktest-form></quicktest-form>
 
     </ion-content>
   </base-layout>
@@ -15,17 +11,12 @@
 <script>
 import { IonContent, } from "@ionic/vue";
 
-import QuicktestQuestion from "../components/quicktest/QuicktestQuestion.vue";
+import QuicktestForm from "../components/quicktest/QuicktestForm.vue";
 
 export default {
   components: {
     IonContent,
-    QuicktestQuestion
-  },
-  computed: {
-    questions() {
-      return this.$store.getters.questions;
-    }
+    QuicktestForm
   },
 }
 </script>
