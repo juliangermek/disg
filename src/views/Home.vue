@@ -1,68 +1,97 @@
 <template>
-  <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Blank</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+  <base-layout page-title="DISG - Das Ist Sehr Gut">
+    <ion-content class="ion-padding">
+      <!-- Verkäufertyp -->
+      <h4>Verkäufertyp wählen</h4>
+      <p>
+        Wählen Sie hier den Verkäufertyp (Ihren Typ). Falls Sie unsicher sind,
+        wählen Sie "Schnelltest". Um Ihren Typ zu verifizieren oder um generell
+        mehr über DISG zu erfahren, wählen Sie "Verifizieren".
+      </p>
+
+      <ion-item
+        v-bind:class="{
+          dominant: selectedSellerType == 'dominant',
+          initiativ: selectedSellerType == 'initiativ',
+          stetig: selectedSellerType == 'stetig',
+          gewissenhaft: selectedSellerType == 'gewissenhaft',
+        }"
+      >
+        <ion-label position="floating">Verkäufertyp</ion-label>
+        <ion-select v-model="selectedSellerType">
+          <ion-select-option value="dominant">Dominant (D)</ion-select-option>
+          <ion-select-option value="initiativ">Initiativ (I)</ion-select-option>
+          <ion-select-option value="stetig">Stetig (S)</ion-select-option>
+          <ion-select-option value="gewissenhaft"
+            >Gewissenhaft (G)</ion-select-option
+          >
+        </ion-select>
+      </ion-item>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="full" color="primary">Schnelltest</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="full" color="primary">Verifizieren</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
     </ion-content>
-  </ion-page>
+  </base-layout>
 </template>
 
-<script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { defineComponent } from 'vue';
+<script>
+import {
+  IonItem,
+  IonLabel,
+  IonSelect,
+  IonSelectOption,
+  IonContent,
+  IonButton,
+  IonGrid,
+  IonRow,
+  IonCol,
+} from "@ionic/vue";
 
-export default defineComponent({
-  name: 'Home',
+export default {
   components: {
+    IonItem,
+    IonLabel,
+    IonSelect,
+    IonSelectOption,
     IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar
-  }
-});
+    IonButton,
+    IonGrid,
+    IonRow,
+    IonCol,
+  },
+  data() {
+    return {
+      selectedSellerType: this.$store.getters.sellerType,
+    };
+  },
+};
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
-  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* Check for more advanced styling: https://ionicframework.com/docs/api/select-option */
+.dominant {
+  --background: var(--ion-color-danger);
+  --color: var(--ion-color-danger-contrast);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.initiativ {
+  --background: var(--ion-color-warning);
+  --color: var(--ion-color-warning-contrast);
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  
-  color: #8c8c8c;
-  
-  margin: 0;
+.stetig {
+  --background: var(--ion-color-success);
+  --color: var(--ion-color-success-contrast);
 }
-
-#container a {
-  text-decoration: none;
+.gewissenhaft {
+  --background: var(--ion-color-primary);
+  --color: var(--ion-color-primary-contrast);
 }
 </style>
