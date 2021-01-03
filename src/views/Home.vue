@@ -31,7 +31,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-button expand="full" color="primary">Schnelltest</ion-button>
+            <ion-button expand="full" color="primary" router-link="/quicktest">Schnelltest</ion-button>
           </ion-col>
           <ion-col>
             <ion-button expand="full" color="primary">Verifizieren</ion-button>
