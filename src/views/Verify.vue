@@ -1,18 +1,13 @@
 <template>
   <base-layout page-title="Verifizieren & Lernen">
-    <ion-content class="ion-padding">
-      Hier wird bald Wissen sein
-    </ion-content>
+    Hier wird bald Wissen sein
   </base-layout>
 </template>
 
 <script>
-import { IonContent, } from "@ionic/vue";
-
+import {  } from "@ionic/vue";
 
 export default {
-  components: {
-    IonContent
-  },
+
 }
 </script>
