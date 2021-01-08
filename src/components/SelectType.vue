@@ -1,6 +1,5 @@
 <template>
   <h4>{{ title }}</h4>
-  <p>{{ explaination }}</p>
 
   <ion-item
     v-bind:class="{
@@ -59,8 +58,7 @@ export default {
 
   props: [
     "title",
-    "explaination",
-    "passedSelectedType"
+    "passedSelectedType",
   ],
   data() {
     return {

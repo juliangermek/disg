@@ -31,7 +31,7 @@ const store = createStore({
         },
       ],
       sellerType: "initiativ",
-      buyerType: "",
+      buyerType: "dominant",
     }
   },
   getters: {

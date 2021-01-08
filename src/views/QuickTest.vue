@@ -1,5 +1,5 @@
 <template>
-  <base-layout page-title="Schnelltest: Verkäufertyp">
+  <base-layout page-title="Schnelltest">
 
     <quicktest-form></quicktest-form>
 
