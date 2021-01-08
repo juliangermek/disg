@@ -1,5 +1,5 @@
 <template>
-  <base-layout page-title="Verifizieren & Lernen">
+  <base-layout page-title="Verifizieren & Lernen" defaultBackLink="/home">
     Hier wird bald Wissen sein
   </base-layout>
 </template>

@@ -44,7 +44,26 @@ const store = createStore({
     buyerType(state) {
       return state.buyerType;
     },
-  }
+  },
+  mutations: {
+    updateType(state, updateData) {
+      console.log("type: ", updateData.type);
+      console.log("value: ", updateData.value);
+
+      if (updateData.type == "seller") {
+        console.log("now in seller");
+        state.sellerType = updateData.value;
+      }
+      if (updateData.type == "buyer") {
+        state.buyerType = updateData.value;
+      }
+    }
+  },
+  actions: {
+    updateType(context, updateData) {
+      context.commit("updateType", updateData); // Place to store in backend server
+    }
+  },
 });
 
 export default store;

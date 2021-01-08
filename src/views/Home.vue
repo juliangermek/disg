@@ -8,11 +8,13 @@
 
     <select-type
       title="Verkäufertyp"
+      type="seller"
       v-model:passedSelectedType="selectedSellerType"
     ></select-type>
 
     <select-type
       title="Käufertyp"
+      type="buyer"
       v-model:passedSelectedType="selectedBuyerType"
     ></select-type>
   </base-layout>
