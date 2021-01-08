@@ -16,6 +16,10 @@ const routes = [
     component: () => import('@/views/QuickTest.vue')
   },
   {
+    path: '/verify',
+    component: () => import('@/views/Verify.vue')
+  },
+  {
     path: '/test',
     component: () => import('@/views/Test.vue')
   },

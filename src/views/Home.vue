@@ -34,7 +34,7 @@
             <ion-button expand="full" color="primary">Schnelltest</ion-button>
           </ion-col>
           <ion-col>
-            <ion-button expand="full" color="primary">Verifizieren</ion-button>
+            <ion-button expand="full" color="primary" router-link="verify">Verifizieren</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
