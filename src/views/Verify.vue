@@ -1,6 +1,6 @@
 <template>
   <base-layout page-title="Verifizieren & Lernen" defaultBackLink="/home">
-    Hier wird bald Wissen sein
+    Hier könnte Ihr Wissen stehen 😎
   </base-layout>
 </template>
 
