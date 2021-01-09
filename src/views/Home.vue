@@ -17,16 +17,23 @@
       role="buyer"
       v-model:passedSelectedType="selectedBuyerType"
     ></select-type>
+
+    <hr />
+
+    <ion-button expand="full" color="medium" router-link="/evaluation" v-bind:class="{ hide: !readyForEvaluation }"
+      >Zur Auswertung</ion-button
+    >
   </base-layout>
 </template>
 
 <script>
-import {} from "@ionic/vue";
+import { IonButton } from "@ionic/vue";
 
 import SelectType from "../components/SelectType.vue";
 
 export default {
   components: {
+    IonButton,
     SelectType,
   },
   computed: {
@@ -35,7 +42,20 @@ export default {
     },
     selectedBuyerType() {
       return this.$store.getters.buyerType;
-    }
+    },
+    readyForEvaluation() {
+      if (this.selectedSellerType != "" && this.selectedBuyerType != "") {
+        return true;
+      } else {
+        return false;
+      }
+    },
   },
 };
 </script>
+
+<style scoped>
+.hide {
+  display: none;
+}
+</style>
