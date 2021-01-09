@@ -23,7 +23,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button expand="full" color="light" :router-link="'/quicktest/'+type">Schnelltest</ion-button>
+        <ion-button expand="full" color="light" :router-link="'/quicktest/'+role">Schnelltest</ion-button>
       </ion-col>
       <ion-col>
         <ion-button expand="full" color="light" router-link="verify">Verifizieren</ion-button>
@@ -58,7 +58,7 @@ export default {
 
   props: [
     "title",
-    "type",
+    "role",
     "passedSelectedType",
   ],
   data() {
@@ -67,11 +67,18 @@ export default {
     }
   },
   emits: [
-    "update:selectedType"
+    "update:passedSelectedType"
   ],
   watch: {
-    selectedTyp() {
-      this.$emit("update:selectedType", this.selectedType);
+    selectedType() {
+      // Update store
+      var role = this.role;
+      var type = this.selectedType; 
+      const updateData = {
+        role: role,
+        type: type,
+      }
+      this.$store.dispatch("updateType", updateData);
     },
     passedSelectedType() {
       this.selectedType = this.passedSelectedType;
