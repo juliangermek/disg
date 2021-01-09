@@ -17,6 +17,8 @@
       type="buyer"
       v-model:passedSelectedType="selectedBuyerType"
     ></select-type>
+
+    {{selectedSellerType}}
   </base-layout>
 </template>
 
@@ -29,11 +31,13 @@ export default {
   components: {
     SelectType,
   },
-  data() {
-    return {
-      selectedSellerType: this.$store.getters.sellerType,
-      selectedBuyerType: this.$store.getters.buyerType,
-    };
+  computed: {
+    selectedSellerType() {
+      return this.$store.getters.sellerType;
+    },
+    selectedBuyerType() {
+      return this.$store.getters.buyerType;
+    }
   },
 };
 </script>

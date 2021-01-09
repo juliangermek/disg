@@ -47,15 +47,11 @@ const store = createStore({
   },
   mutations: {
     updateType(state, updateData) {
-      console.log("type: ", updateData.type);
-      console.log("value: ", updateData.value);
-
-      if (updateData.type == "seller") {
-        console.log("now in seller");
-        state.sellerType = updateData.value;
+      if (updateData.role == "seller") {
+        state.sellerType = updateData.type;
       }
-      if (updateData.type == "buyer") {
-        state.buyerType = updateData.value;
+      if (updateData.role == "buyer") {
+        state.buyerType = updateData.type;
       }
     }
   },

@@ -72,6 +72,9 @@ export default {
   watch: {
     selectedTyp() {
       this.$emit("update:selectedType", this.selectedType);
+    },
+    passedSelectedType() {
+      this.selectedType = this.passedSelectedType;
     }
   },
   

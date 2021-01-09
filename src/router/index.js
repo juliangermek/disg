@@ -12,7 +12,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/quicktest/:type',
+    path: '/quicktest/:role',
     component: () => import('@/views/QuickTest.vue')
   },
   {
