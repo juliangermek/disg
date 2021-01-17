@@ -1,47 +1,19 @@
 <template>
-  <ion-list>
-    <ion-radio-group value="biff">
-      <ion-list-header>
-        <ion-label>Name</ion-label>
-      </ion-list-header>
-
-      <ion-item>
-        <ion-label>Biff</ion-label>
-        <ion-radio slot="start" value="biff"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Griff</ion-label>
-        <ion-radio slot="start" value="griff"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Buford</ion-label>
-        <ion-radio slot="start" value="buford"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-  </ion-list>
+  <ion-item>
+    <ion-label position="floating">Select</ion-label>
+    <ion-select>
+      <ion-select-option value="brown">Brown</ion-select-option>
+      <ion-select-option value="blonde">Blonde</ion-select-option>
+      <ion-select-option value="black">Black</ion-select-option>
+      <ion-select-option value="red">Red</ion-select-option>
+    </ion-select>
+  </ion-item>
 </template>
 
 <script>
-import { 
-  IonItem, 
-  IonLabel, 
-  IonList, 
-  IonListHeader,
-  IonRadio, 
-  IonRadioGroup
-} from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { IonItem, IonLabel, IonSelect, IonSelectOption } from '@ionic/vue';
 
-export default defineComponent({
-  components: { 
-    IonItem, 
-    IonLabel, 
-    IonList, 
-    IonListHeader,
-    IonRadio, 
-    IonRadioGroup
-  }
-});
+export default{
+  components: { IonItem, IonLabel, IonSelect, IonSelectOption },
+};
 </script>

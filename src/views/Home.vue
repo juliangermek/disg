@@ -20,7 +20,7 @@
 
     <hr />
 
-    <ion-button expand="full" color="medium" router-link="/evaluation" v-bind:class="{ hide: !readyForEvaluation }"
+    <ion-button expand="full" color="primary" router-link="/evaluation" v-bind:class="{ hide: !readyForEvaluation }"
       >Zur Auswertung</ion-button
     >
   </base-layout>

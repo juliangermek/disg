@@ -30,8 +30,8 @@ const store = createStore({
           answer4: "Frage 3 - Antwort 4",
         },
       ],
-      sellerType: "stetig",
-      buyerType: "gewissenhaft",
+      sellerType: "",
+      buyerType: "",
     }
   },
   getters: {

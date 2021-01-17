@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">disg</string>
+    <string name="title_activity_main">disg</string>
+    <string name="package_name">de.axelgermek.disg</string>
+    <string name="custom_url_scheme">de.axelgermek.disg</string>
+</resources>

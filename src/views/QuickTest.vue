@@ -43,7 +43,7 @@
           </ion-radio-group>
         </ion-list>
 
-        <ion-button expand="full" color="medium" @click="evaluate">Test auswerten</ion-button>
+        <ion-button expand="full" color="primary" @click="evaluate">Test auswerten</ion-button>
       </form>
     </div>
 
@@ -61,7 +61,7 @@
           Das Testergebnis ist eindeutig. Drücken Sie hier, um
           <b>{{ max_keys_formatted }}</b> als Typ zu übernehmen.
         </p>
-        <ion-button expand="full" color="medium" @click="confirmResult()">{{ max_keys_formatted }} übernehmen</ion-button>
+        <ion-button expand="full" color="primary" @click="confirmResult()">{{ max_keys_formatted }} übernehmen</ion-button>
       </div>
       <div v-else>
         <p>
