@@ -40,6 +40,8 @@
               <ion-label class="ion-text-wrap">{{ question.answer4 }}</ion-label>
               <ion-radio slot="start" value="gewissenhaft"></ion-radio>
             </ion-item>
+
+            <br />
           </ion-radio-group>
         </ion-list>
 
