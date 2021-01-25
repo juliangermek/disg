@@ -53,6 +53,16 @@ const store = createStore({
         ],
       ],
 
+      phases: [
+        "1 Presales",
+        "2 Kontakt",
+        "3 Bedarf",
+        "4 Angebot",
+        "5 Einwände",
+        "6 Abschluß",
+        "7 Aftersales",
+      ],
+
       sellerType: "",
       buyerType: "",
     }
@@ -63,6 +73,9 @@ const store = createStore({
     },
     info(state) {
       return state.info;
+    },
+    phases(state) {
+      return state.phases;
     },
     sellerType(state) {
       return state.sellerType;

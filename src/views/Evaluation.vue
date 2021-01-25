@@ -4,6 +4,12 @@
     <p>Typ des Käufers: {{ buyerType }}</p>
 
     <p><span v-html="info[0][0][2]"></span></p>
+    {{ phases }}
+    <div v-for="phase in phases.length" :key="phase">
+      <p>Phase {{phase}}</p>
+      <span v-html="info[0][0][phase-1]"></span>
+      <br><br>
+    </div>
   </base-layout>
 </template>
 
@@ -18,6 +24,9 @@ export default {
   computed: {
     info() {
       return this.$store.getters.info;
+    },
+    phases() {
+      return this.$store.getters.phases;
     },
   },
 };
