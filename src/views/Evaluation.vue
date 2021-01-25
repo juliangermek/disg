@@ -3,18 +3,39 @@
     <p>Typ des Verkäufers: {{ sellerType }}</p>
     <p>Typ des Käufers: {{ buyerType }}</p>
 
-    <p><span v-html="info[0][0][2]"></span></p>
-    {{ phases }}
-    <div v-for="phase in phases.length" :key="phase">
-      <p>Phase {{phase}}</p>
-      <span v-html="info[0][0][phase-1]"></span>
-      <br><br>
+    <div v-for="(phase, index) in phases" :key="index">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Phase {{ index + 1 }}</ion-card-subtitle>
+          <ion-card-title>{{ phase }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <span v-html="info[sellerTypeNumber][buyerTypeNumber][index]"></span>
+        </ion-card-content>
+      </ion-card>
     </div>
+
   </base-layout>
 </template>
 
 <script>
+import {
+  IonCard,
+  IonCardHeader,
+  IonCardContent,
+  IonCardSubtitle,
+  IonCardTitle,
+} from "@ionic/vue";
+
 export default {
+  components: {
+    IonCard,
+    IonCardHeader,
+    IonCardContent,
+    IonCardSubtitle,
+    IonCardTitle,
+  },
   data() {
     return {
       sellerType: this.$store.getters.sellerType,
@@ -28,6 +49,34 @@ export default {
     phases() {
       return this.$store.getters.phases;
     },
+    sellerTypeNumber() {
+      switch(this.sellerType) {
+        case "dominant":
+          return 0;
+        case "initiativ":
+          return 1;
+        case "stetig":
+          return 2;
+        case "gewissenhaft":
+          return 3;
+        default:
+          return 0;
+      }
+    },
+    buyerTypeNumber() {
+      switch(this.buyerType) {
+        case "dominant":
+          return 0;
+        case "initiativ":
+          return 1;
+        case "stetig":
+          return 2;
+        case "gewissenhaft":
+          return 3;
+        default:
+          return 0;
+      }
+    }
   },
 };
 </script>
