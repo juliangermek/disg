@@ -6,7 +6,7 @@
     <p>Typ des Käufers: <span v-bind:class="buyerType">{{ capitalizeFirstLetter(buyerType) }}</span></p>
 
     <br>
-    <h6 style="margin-bottom:3px">Ihr Empfehlung</h6>
+    <h6 style="margin-bottom:3px">Ihre Empfehlung</h6>
     <hr style="margin-top:0">
     <div v-for="(phase, index) in phases" :key="index">
       <ion-card>
