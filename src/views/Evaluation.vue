@@ -1,6 +1,6 @@
 <template>
   <base-layout page-title="Auswertung" defaultBackLink="/home">
-    <h6 style="margin-bottom:3px">Ihr Auswahl</h6>
+    <h6 style="margin-bottom:3px">Ihre Auswahl</h6>
     <hr style="margin-top:0">
     <p>Typ des Verkäufers: <span v-bind:class="sellerType">{{ capitalizeFirstLetter(sellerType) }}</span></p>
     <p>Typ des Käufers: <span v-bind:class="buyerType">{{ capitalizeFirstLetter(buyerType) }}</span></p>
