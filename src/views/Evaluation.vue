@@ -1,8 +1,13 @@
 <template>
   <base-layout page-title="Auswertung" defaultBackLink="/home">
-    <p>Typ des Verkäufers: {{ sellerType }}</p>
-    <p>Typ des Käufers: {{ buyerType }}</p>
+    <h6 style="margin-bottom:3px">Ihr Auswahl</h6>
+    <hr style="margin-top:0">
+    <p>Typ des Verkäufers: <span v-bind:class="sellerType">{{ capitalizeFirstLetter(sellerType) }}</span></p>
+    <p>Typ des Käufers: <span v-bind:class="buyerType">{{ capitalizeFirstLetter(buyerType) }}</span></p>
 
+    <br>
+    <h6 style="margin-bottom:3px">Ihr Empfehlung</h6>
+    <hr style="margin-top:0">
     <div v-for="(phase, index) in phases" :key="index">
       <ion-card>
         <ion-card-header>
@@ -15,7 +20,6 @@
         </ion-card-content>
       </ion-card>
     </div>
-
   </base-layout>
 </template>
 
@@ -42,6 +46,11 @@ export default {
       buyerType: this.$store.getters.buyerType,
     };
   },
+  methods: {
+    capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    },
+  },
   computed: {
     info() {
       return this.$store.getters.info;
@@ -50,7 +59,7 @@ export default {
       return this.$store.getters.phases;
     },
     sellerTypeNumber() {
-      switch(this.sellerType) {
+      switch (this.sellerType) {
         case "dominant":
           return 0;
         case "initiativ":
@@ -64,7 +73,7 @@ export default {
       }
     },
     buyerTypeNumber() {
-      switch(this.buyerType) {
+      switch (this.buyerType) {
         case "dominant":
           return 0;
         case "initiativ":
@@ -76,7 +85,24 @@ export default {
         default:
           return 0;
       }
-    }
+    },
   },
 };
 </script>
+
+<style scoped>
+hr {background: grey;}
+
+.dominant{
+  color: var(--dominant-color);
+}
+.initiativ{
+  color: var(--initiativ-color);
+}
+.stetig{
+  color: var(--stetig-color);
+}
+.gewissenhaft{
+  color: var(--gewissenhaft-color);
+}
+</style>

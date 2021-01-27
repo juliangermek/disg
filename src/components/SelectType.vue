@@ -96,15 +96,15 @@ export default {
 }
 
 .dominant::part(text) {
-  color: rgb(228,30,66);
+  color: var(--dominant-color);
 }
 .initiativ::part(text) {
-  color: rgb(254,220,0);
+  color: var(--initiativ-color);
 }
 .stetig::part(text) {
-  color: rgb(0,146,91);
+  color: var(--stetig-color);
 }
 .gewissenhaft::part(text) {
-  color: rgb(0,110,179);
+  color: var(--gewissenhaft-color);
 }
 </style>
