@@ -5,7 +5,7 @@ const store = createStore({
     return {
       questions_seller: [
 
-        { id: "q1", question: "Wenn ich spreche, wirke ich auf andere...", answer1: "selbstbewußt", answer2: "laut", answer3: "verhalten", answer4: "emotionslos" },
+        { id: "q1", question: "Wenn ich spreche, wirke ich auf andere...", answer1: "selbstbewusst", answer2: "laut", answer3: "verhalten", answer4: "emotionslos" },
         { id: "q2", question: "Wenn Sie selbst Käufer sind und der Verkäufer zu Beginn Ihres Besuches smalltalkt...", answer1: "lassen Sie es kurz zu, brechen aber schnell ab und kommen zur Sache", answer2: "steigen Sie gerne darauf ein", answer3: "lassen Sie es höflichkeitshalber zu, bringen aber wenig eigene Beiträge", answer4: "steigen Sie i.d.R. nicht darauf ein und signalisieren, dass Sie zur Sache kommen möchten" },
         { id: "q3", question: "Wenn Sie anderen Personen zuhören, verhalten Sie sich...", answer1: "eher ungeduldig und unterbrechen andere", answer2: "freundlich, optimistisch; unterbrechen oft, bringen immer wieder eigene Beiträge ein", answer3: "ruhig und sind ein geduldiger Zuhörer", answer4: "als guter Zuhörer und geben diplomatische Antworten" },
         { id: "q4", question: "Wenn Sie Fragen stellen, geht es ...", answer1: "hauptsächlich um das Wesentliche", answer2: "oft um eigene und die Gefühle anderer", answer3: "meistens um „Wie“-Fragen", answer4: "meistens um weitere bzw. tiefergehende Informationen" },
@@ -22,8 +22,8 @@ const store = createStore({
       ],
       questions_buyer: [
 
-        { id: "q1", question: "Wenn diese Person spricht, wirkt sie...", answer1: "selbstbewußt", answer2: "laut", answer3: "verhalten", answer4: "emotionslos" },
-        { id: "q2", question: "Wenn Sie mit dieser Person zu Beginn Ihres Besuches smalltalken...", answer1: "läßt sie es kurz zu, bricht aber schnell ab und kommt zur Sache", answer2: "steigt sich gerne darauf ein und stellt sich dar", answer3: "läßt sie es höflichkeitshalber zu, bringt aber wenig eigene Beiträge", answer4: "steigt sie i.d.R. nicht darauf ein und signalisiert, dass sie zur Sache kommen möchte" },
+        { id: "q1", question: "Wenn diese Person spricht, wirkt sie...", answer1: "selbstbewusst", answer2: "laut", answer3: "verhalten", answer4: "emotionslos" },
+        { id: "q2", question: "Wenn Sie mit dieser Person zu Beginn Ihres Besuches smalltalken...", answer1: "lässt sie es kurz zu, bricht aber schnell ab und kommt zur Sache", answer2: "steigt sich gerne darauf ein und stellt sich dar", answer3: "lässt sie es höflichkeitshalber zu, bringt aber wenig eigene Beiträge", answer4: "steigt sie i.d.R. nicht darauf ein und signalisiert, dass sie zur Sache kommen möchte" },
         { id: "q3", question: "Wenn diese Person zuhört, verhält sie sich...", answer1: "eher ungeduldig und unterbricht andere", answer2: "freundlich, optimistisch; unterbricht oft, bringt immer wieder eigene Beiträge ein", answer3: "ruhig und ist ein geduldiger Zuhörer", answer4: "als guter Zuhörer und gibt diplomatische Antworten" },
         { id: "q4", question: "Wenn diese Person Fragen stellt, geht es ...", answer1: "hauptsächlich um das Wesentliche", answer2: "oft um eigene und die Gefühle anderer", answer3: "meistens um „Wie“-Fragen", answer4: "meistens um weitere bzw. tiefergehende Informationen" },
         { id: "q5", question: "Bei längeren Besprechungen diskutiert diese Person...", answer1: "ausdauernd und hart", answer2: "lebhaft und emotional", answer3: "ausgleichend und entgegenkommend", answer4: "diszipliniert und sorgfältig" },
@@ -46,7 +46,7 @@ const store = createStore({
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, Wesentliches zusammenfassen",
             "Chancenstrategie, Optionen aufzeigen</p><p>Präsentation vom Groben (=Überschriften) bei Bedarf ins Feine (=Details), bei Ungeduld des Kunden Tempo beschleunigen, Optionen aufzeigen, Ergebnisse klar herausstellen, kaufen lassen</p><p>Nutzen: </p><p>Effizienz, Ersparnisse, schnelle Gewinne, Chancen, eigener Machtgewinn, Kontrolle haben",
             "Einwände ernst nehmen und schnelle Lösungen anbieten, Der Kunde hat immer Recht und das letzte Wort (nicht ich)",
-            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluß kommen",
+            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen",
             "Versprechen und Zusagen halten, prägnant dokumentieren</p>",
           ],
           [ // Käufer initiativ
@@ -55,11 +55,11 @@ const store = createStore({
             "W-Fragen stellen statt argumentieren, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), keine voreiligen Schlüsse ziehen, nicht drängeln",
             "Chancenstrategie, Lösung moderieren</p><p>Kunde mit in die Lösungsfindung einbeziehen (moderieren), mit lösungsorientierten Fragen weiter aktivieren, Köder auslegen, Gründe liefern, damit er groß rauskommt, locker bleiben, Begeisterung wecken, kaufen helfen</p><p>Nutzen:</p><p>Die geniale Lösung, eigene Kräfte schonen, Wie kann er persönlich erfolgreich und gut dastehen?, hatte er ein `Kauferlebnis`?",
             "Immer freundlich und locker bleiben, Kunde anregen, Einwände zu äußern, in gemeinsame Lösung miteinbeziehen",
-            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluß aktiv herbeiführen, Empfehlung aussprechen",
+            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen",
             "Beziehung vertiefen, Zeit für Kundenpflege, will unterhalten werden</p>",
           ],
           [ // Käufer stetig
-            "<p>Eigene Ziele außen vor lassen und auf Kundenbedürfnisse konzentrieren, detailliert vorbereitet, auf jeden Fall ausführliche Agenda vorab schicken.</p><p>Programmierung:</p><p>Keinen Druck machen, viel Geduld und Zeit mitbringen, sich einstellen auf Erklären müssen und Fragen beantworten, unterstützen</p><p>Erwartung des Kunden an mich:</p><p>Bestätigung, Sicherheit, kann sich mit Kauf auf mich verlassen, kein Zeitdruck und Streß",
+            "<p>Eigene Ziele außen vor lassen und auf Kundenbedürfnisse konzentrieren, detailliert vorbereitet, auf jeden Fall ausführliche Agenda vorab schicken.</p><p>Programmierung:</p><p>Keinen Druck machen, viel Geduld und Zeit mitbringen, sich einstellen auf Erklären müssen und Fragen beantworten, unterstützen</p><p>Erwartung des Kunden an mich:</p><p>Bestätigung, Sicherheit, kann sich mit Kauf auf mich verlassen, kein Zeitdruck und Stress",
             "Ruhig und ausgeglichen auftreten, eher defensiv, evt. etwas Smalltalk, das Kunde zeigt, dass ich an ihm persönlich interessiert bin",
             "W-Fragen stellen statt argumentieren, aktiv zuhören, öfter zusammenfassen, lieber nochmal nachfragen, erste Hilfen signalisieren",
             "Vermeidungsstrategie, kleine Schritte</p><p>Erst Vertrauen aufbauen, dann Geschäft, viel Infos, erklären, ohne Druck, langsam vom Bekannten zum Neuen in kleinen Schritten führen, nicht mit der Türe ins Haus fallen, kaufen helfen</p><p>Nutzen:</p><p>Vermeidung von Nachteilen, Nachhaltigkeit, nicht alles verändern müssen, Zuverlässigkeit, Service, bewährt, Referenzen, Kunde weiß, was auf ihn zukommt",
@@ -71,7 +71,7 @@ const store = createStore({
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Keinen Druck machen, nicht drängen, auf viele Detailfragen vorbereitet sein, Zeit mitbringen, Kunde ist vorbereitet, er ist Fachmann</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, Zeit für Info und Entscheidung",
             "Sachlich, formal und leise auftreten, i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Ich bin Experte, sachlich bleiben, detaillierte Fragen stellen, Bedarf zusammenfassen, keine voreiligen Schlüsse ziehen",
-            "Vermeidungsstrategie, Beweise</p><p>Argumente langsam und logisch präsentieren, alle Details mit einbeziehen, Alternativen/ Optionen sauber herausarbeiten, nicht überfahren, Tempo bestimmt der Kunde selbst, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozeßsicherheit, keine plötzlichen und gravierenden Veränderungen",
+            "Vermeidungsstrategie, Beweise</p><p>Argumente langsam und logisch präsentieren, alle Details mit einbeziehen, Alternativen/ Optionen sauber herausarbeiten, nicht überfahren, Tempo bestimmt der Kunde selbst, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozesssicherheit, keine plötzlichen und gravierenden Veränderungen",
             "Gelassen bleiben bei den detaillierten Fragen, Zeit geben, seine Bedenken mit ZDF sauber ausräumen",
             "Entscheidet zögerlich, zusammenfassen, Restpunkte noch klären, Unterlagen anbieten, Zeit geben, um nochmal prüfen zu können, nicht drängeln, evt. Zeitpunkt zum Nachfassen vereinbaren, persönliche Ebene etwas stärken",
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
@@ -85,7 +85,7 @@ const store = createStore({
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, beim Thema bleiben, auf Ungeduld des Kunden achten, mitschreiben",
             "Chancenstrategie, Optionen aufzeigen</p><p>Präsentation vom Groben (=Überschriften) bei Bedarf ins Feine (=Details), bei Ungeduld des Kunden Tempo beschleunigen, Optionen aufzeigen, nicht herumeiern, nicht abschweifen, auf die Sache konzentrieren, Ziel ist verkaufen, nicht eine gute Beziehung! kaufen lassen</p><p>Nutzen: </p><p>Effizienz, Ersparnisse, schnelle Gewinne, Chancen, eigener Machtgewinn, Kontrolle haben",
             "Einwände ernst nehmen und schnelle Lösungen anbieten, Der Kunde hat Recht und das letzte Wort, seine rationale Art nicht persönlich nehmen, keine Ausflüchte</p><p>",
-            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluß kommen",
+            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen",
             "Versprechen und Zusagen halten, prägnant dokumentieren, Zwischenfeedback geben</p>",
           ],
           [
@@ -94,7 +94,7 @@ const store = createStore({
             "W-Fragen stellen statt zutexten, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), mitschreiben bzw. visualisieren",
             "Chancenstrategie, Lösung moderieren</p><p>Kunde mit in die Lösungsfindung einbeziehen (moderieren), mit lösungsorientierten Fragen weiter aktivieren, Köder auslegen, Gründe liefern, damit er groß rauskommt, Gespräch strukturieren, eine Art Entertainer sein, Begeisterung wecken, Ziel ist Business machen! kaufen helfen</p><p>Nutzen:</p><p>Die geniale Lösung, eigene Kräfte schonen, Wie kann er persönlich erfolgreich und gut dastehen?, hatte er ein `Kauferlebnis`?",
             "Einwände sportlich nehmen, sie sind eine Chance, immer freundlich und locker bleiben, gemeinsame Lösung herausarbeiten, viel reden",
-            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluß aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
+            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
             "Kontakt halten, Zeit für Kundenpflege, will unterhalten werden, alles schriftlich dokumentieren, evt. Chancen für Cross Selling nutzen</p>",
           ],
           [
@@ -110,7 +110,7 @@ const store = createStore({
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Keinen Druck machen, nicht drängen, auf viele Detailfragen vorbereitet sein, Zeit mitbringen, eher formal bleiben, nicht zu flapsig oder locker, sehr auf die Sache konzentrieren, Kunde ist vorbereitet, er ist Fachmann</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, nicht zugelabert werden",
             "Sachlich, formal und leise auftreten, keinen Wind machen, i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Methodisch vorgehen, sachlich bleiben, detaillierte Fragen stellen, Bedarf zusammenfassen, sauber dokumentieren",
-            "Vermeidungsstrategie, Beweise</p><p>Argumente möglichst logisch präsentieren, alle Details mit einbeziehen, Beweise liefern, Alternativen/ Optionen sauber herausarbeiten, nicht zu oberflächlich, auch den Haken an der Sache erwähnen, Tempo bestimmt der Kunde selbst, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozeßsicherheit, keine plötzlichen und gravierenden Veränderungen",
+            "Vermeidungsstrategie, Beweise</p><p>Argumente möglichst logisch präsentieren, alle Details mit einbeziehen, Beweise liefern, Alternativen/ Optionen sauber herausarbeiten, nicht zu oberflächlich, auch den Haken an der Sache erwähnen, Tempo bestimmt der Kunde selbst, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozesssicherheit, keine plötzlichen und gravierenden Veränderungen",
             "Fragen = Interesse, nicht ungeduldig werden, seine Bedenken mit ZDF sauber ausräumen, rationale und umfassende Antworten, Zeit geben, nichts unter den Tisch fallen lassen",
             "Entscheidet zögerlich, zusammenfassen, Restpunkte noch klären, Unterlagen anbieten, Zeit geben, um nochmal prüfen zu können, nicht drängeln, evt. Zeitpunkt zum Nachfassen vereinbaren",
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
@@ -124,7 +124,7 @@ const store = createStore({
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, auf Ungeduld des Kunden achten, nicht in Details verzetteln, mitschreiben",
             "Chancenstrategie, Optionen aufzeigen</p><p>Präsentation vom Groben (=Überschriften) bei Bedarf ins Feine (=Details), bei Ungeduld des Kunden Tempo beschleunigen, Optionen aufzeigen, Vorteile und Zielerreichung des Kunden betonen, nicht herumeiern, nicht umfallen, kaufen lassen</p><p>Nutzen: </p><p>Effizienz, Ersparnisse, schnelle Gewinne, Chancen, eigener Machtgewinn, Kontrolle haben",
             "Einwände ernst nehmen und schnelle Lösungen anbieten, Der Kunde hat Recht und das letzte Wort, engagiert bleiben, nicht umfallen, keine Angst er beißt nicht",
-            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluß kommen, Abschluß nicht mit zusätzlichen Aspekten oder Prüfschleifen verzögern",
+            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen, Abschluss nicht mit zusätzlichen Aspekten oder Prüfschleifen verzögern",
             "Versprechen und Zusagen halten, prägnant dokumentieren, Zwischenfeedback geben</p>",
           ],
           [
@@ -133,7 +133,7 @@ const store = createStore({
             "W-Fragen stellen, kommen lassen, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), mehr Zeit dafür vorsehen, mitschreiben bzw. visualisieren",
             "Chancenstrategie, Lösung moderieren</p><p>Kunde mit in die Lösungsfindung einbeziehen (moderieren), mit lösungsorientierten Fragen weiter aktivieren, Köder auslegen, Gründe liefern, damit er groß rauskommt, Gespräch strukturieren, unterhaltend sein, Begeisterung wecken, kaufen helfen</p><p>Nutzen:</p><p>Die geniale Lösung, eigene Kräfte schonen, Wie kann er persönlich erfolgreich und gut dastehen?, hatte er ein `Kauferlebnis`?",
             "Einwände leicht nehmen, nicht entmutigen lassen, immer freundlich und locker bleiben, gemeinsame Lösung herausarbeiten",
-            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluß aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
+            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
             "Beziehung vertiefen, Zeit für Kundenpflege, will unterhalten werden</p>",
           ],
           [
@@ -149,7 +149,7 @@ const store = createStore({
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Ich habe einen Plan, auf viele Detailfragen vorbereitet sein, Zeit mitbringen, eher formal bleiben, nicht zu emotional, kein `Kuschelfaktor`, Kunde ist vorbereitet, er ist Fachmann</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, Sachlichkeit",
             "Sachlich, formal, etwas distanzierter,  i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Planvoll und methodisch vorgehen, detaillierte Fragen stellen, Bedarf zusammenfassen, sauber dokumentieren",
-            "Vermeidungsstrategie, Beweise</p><p>Plan erkennen lassen, Argumente logisch präsentieren, alle Details mit einbeziehen, Beweise liefern, Alternativen/ Optionen sauber herausarbeiten, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozeßsicherheit, keine plötzlichen und gravierenden Veränderungen",
+            "Vermeidungsstrategie, Beweise</p><p>Plan erkennen lassen, Argumente logisch präsentieren, alle Details mit einbeziehen, Beweise liefern, Alternativen/ Optionen sauber herausarbeiten, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozesssicherheit, keine plötzlichen und gravierenden Veränderungen",
             "Fragen = Interesse, nicht persönlich nehmen, seine Bedenken mit ZDF sauber ausräumen, rationale und umfassende Antworten, nicht umfallen",
             "Entscheidet zögerlich, zusammenfassen, Restpunkte noch klären, Unterlagen anbieten, Zeit geben, um nochmal prüfen zu können, evt. Zeitpunkt zum Nachfassen vereinbaren",
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
@@ -163,7 +163,7 @@ const store = createStore({
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, auf Ungeduld des Kunden achten, nicht in Details verzetteln",
             "Chancenstrategie, Optionen aufzeigen</p><p>Präsentation vom Groben (=Überschriften) bei Bedarf ins Feine (=Details), bei Ungeduld des Kunden Tempo beschleunigen, Optionen aufzeigen, Vorteile und Zielerreichung des Kunden betonen, ihn nicht mit Details aufhalten, kaufen lassen</p><p>Nutzen: </p><p>Effizienz, Ersparnisse, schnelle Gewinne, Chancen, eigener Machtgewinn, Kontrolle haben",
             "Einwände ernst nehmen und schnelle Lösungen anbieten, der Kunde hat Recht und das letzte Wort, ihm nichts beweisen wollen, engagiert bleiben",
-            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluß kommen</p><p>Abschluß nicht mit zusätzlichen Aspekten verzögern, Erfolgsaussichten betonen",
+            "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen</p><p>Abschluss nicht mit zusätzlichen Aspekten verzögern, Erfolgsaussichten betonen",
             "Ergebnisse prägnant dokumentieren, Zwischenfeedback geben</p>",
           ],
           [
@@ -172,7 +172,7 @@ const store = createStore({
             "W-Fragen stellen, kommen lassen, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), mehr Zeit dafür vorsehen, Details überspringen",
             "Chancenstrategie, Lösung moderieren</p><p>Kunde mit in die Lösungsfindung einbeziehen (moderieren), mit lösungsorientierten Fragen weiter aktivieren, Köder auslegen, Gründe liefern, damit er groß rauskommt, Gespräch strukturieren, engagiert und beweglich bleiben, mehr emotionale Ansprache als Details, kaufen helfen</p><p>Nutzen:</p><p>Die geniale Lösung, eigene Kräfte schonen, Wie kann er persönlich erfolgreich und gut dastehen?, hatte er ein `Kauferlebnis`?",
             "Einwände leicht nehmen, immer freundlich und locker bleiben, gemeinsame Lösung herausarbeiten, eher emotional als rational abholen",
-            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluß aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
+            "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
             "Beziehung vertiefen, Zeit für Kundenpflege, will unterhalten werden, öfter einfach mal so kontaktieren</p>",
           ],
           [
@@ -188,7 +188,7 @@ const store = createStore({
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Sei du selbst, auf viele Detailfragen vorbereitet sein, Kunde ist vorbereitet, er ist Fachmann, nicht unbedingt Recht haben wollen</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, fachsimpeln können",
             "i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Planvoll und methodisch vorgehen, detaillierte Fragen stellen, Bedarf zusammenfassen, sauber dokumentieren, nicht im Detail verlieren, vor eigener Interpretation lieber nochmal nachfragen",
-            "Vermeidungsstrategie, Beweise</p><p>Plan präsentieren, viel ZDF, alle Details mit einbeziehen, Beweise liefern, Alternativen/ Optionen sauber herausarbeiten, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozeßsicherheit, keine plötzlichen und gravierenden Veränderungen",
+            "Vermeidungsstrategie, Beweise</p><p>Plan präsentieren, viel ZDF, alle Details mit einbeziehen, Beweise liefern, Alternativen/ Optionen sauber herausarbeiten, kaufen lassen</p><p>Nutzen:</p><p>Betonen der Richtigkeit, Beweise liefern für Argumente und Ergebnisse, Qualität, Service, Prozesssicherheit, keine plötzlichen und gravierenden Veränderungen",
             "Fragen = Interesse und nicht Dummheit, engagiert bleiben, seine Bedenken mit ZDF sauber ausräumen, rationale und umfassende Antworten",
             "Entscheidet zögerlich, zusammenfassen, Restpunkte noch klären, Unterlagen anbieten, Zeit geben, um nochmal prüfen zu können, evt. Zeitpunkt zum Nachfassen vereinbaren, persönliche Ebene etwas stärken, ",
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
@@ -202,7 +202,7 @@ const store = createStore({
         "Bedarf",
         "Angebot",
         "Einwände",
-        "Abschluß",
+        "Abschluss",
         "Aftersales",
       ],
 
