@@ -107,7 +107,6 @@ export default {
     return {
       role: this.$route.params.role,
 
-      questions: this.$store.getters.questions,
       responses: {},
       counter: {},
       max_keys: [],
@@ -116,6 +115,13 @@ export default {
     };
   },
   computed: {
+    questions() {
+      if (this.role == "seller") {
+        return this.$store.getters.questions_seller;
+      } else {
+        return this.$store.getters.questions_buyer;
+      }
+    },
     roleTitle() {
       if (this.role == "seller") {
         return "Verkäufertyp"
