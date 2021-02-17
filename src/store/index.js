@@ -77,9 +77,8 @@ const store = createStore({
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
           ],
         ],
-        // Verkäufer initiativ
-        [
-          [
+        [// Verkäufer initiativ
+          [ // Käufer dominant
             "<p>Wesentliches ist gut vorbereitet, Details bereithalten, falls erforderlich. Agenda kurz und knapp vorab vorschlagen und Feedback erbitten.</p><p>Programmierung:</p><p>Kunde hat die gefühlte Kontrolle und will schnell zum Ergebnis kommen, im Hintergrund führen, ausdrucksstarkes Auftreten, aufgabenorientiert, sparsam mit Emotionen</p><p>Erwartung des Kunden an mich:</p><p>Sparringspartner, schnelle Resultate, Alternativen, nicht rumeiern und meine Zeit stehlen",
             "Kurzes Warmup, nicht über `das Wetter` reden, schnell zur Sache kommen",
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, beim Thema bleiben, auf Ungeduld des Kunden achten, mitschreiben",
@@ -88,7 +87,7 @@ const store = createStore({
             "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen",
             "Versprechen und Zusagen halten, prägnant dokumentieren, Zwischenfeedback geben</p>",
           ],
-          [
+          [ // Käufer initiativ
             "<p>Normal vorbereitet, auf spontane Richtungswechsel vorbereitet sein, weiß der Kunde schon, was er will? Agenda knapp aber alles drin.</p><p>Programmierung:</p><p>Auf Zeitmanagement achten, nicht alle Schleifen des Kunden mitgehen, helfen, dass der Kunde auf dem Boden bleibt, Ziel setzen, sich selbst etwas zurücknehmen, ich bin für´s Strukturieren zuständig</p><p>Erwartung des Kunden an mich:</p><p>Beziehung zu mir finden, mir vertauen können, mit Kauf persönliche Vorteile haben, ich bin wichtiger als du",
             "Sei du selbst, Smalltalk nicht zu stark ausdehnen, Bühne für Selbstdarstellung geben, nicht übertreiben (Zeitmanagement!)",
             "W-Fragen stellen statt zutexten, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), mitschreiben bzw. visualisieren",
@@ -97,7 +96,7 @@ const store = createStore({
             "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
             "Kontakt halten, Zeit für Kundenpflege, will unterhalten werden, alles schriftlich dokumentieren, evt. Chancen für Cross Selling nutzen</p>",
           ],
-          [
+          [ // Käufer stetig
             "<p>Eigene Ziele außen vor lassen und auf Kundenbedürfnisse konzentrieren, detailliert vorbereitet, auf jeden Fall ausführliche Agenda vorab schicken.</p><p>Programmierung:</p><p>Gas raus, keinen Druck machen, viel Geduld und Zeit mitbringen, sich einstellen auf Erklären und Fragen beantworten, nicht so laut und plakativ, etwas verbindlicher sein</p><p>Erwartung des Kunden an mich:</p><p>Bestätigung, Sicherheit, kann sich mit Kauf auf mich verlassen, kein Zeitdruck, nicht so aufdringlich",
             "Sich etwas zurücknehmen, leiser auftreten, nicht gleich den letzten Blondinenwitz bringen, eher defensiv auftreten, evt. etwas Smalltalk, das Kunde zeigt, dass ich an ihm persönlich interessiert bin",
             "Durchdachte Fragen stellen statt argumentieren, viel aktiv zuhören, öfter zusammenfassen, häufig nachfragen, erste Hilfen signalisieren",
@@ -106,7 +105,7 @@ const store = createStore({
             "Entscheidet wohlüberlegt, gemeinsam zusammenfassen, Restpunkte sauber abarbeiten, Empfehlung aussprechen, Vertrauen stärken, zu einer Entscheidung ermutigen, persönliche Zusagen",
             "Persönliches Feedback, nicht gleich mit dem Nächsten kommen, persönliche Verfügbarkeit und weitere Unterstützung anbieten, Versprechen und Zusagen halten </p>",
           ],
-          [
+          [ // Käufer gewissenhaft
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Keinen Druck machen, nicht drängen, auf viele Detailfragen vorbereitet sein, Zeit mitbringen, eher formal bleiben, nicht zu flapsig oder locker, sehr auf die Sache konzentrieren, Kunde ist vorbereitet, er ist Fachmann</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, nicht zugelabert werden",
             "Sachlich, formal und leise auftreten, keinen Wind machen, i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Methodisch vorgehen, sachlich bleiben, detaillierte Fragen stellen, Bedarf zusammenfassen, sauber dokumentieren",
@@ -116,9 +115,8 @@ const store = createStore({
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
           ],
         ],
-        // Verkäufer stetig
-        [
-          [
+        [// Verkäufer stetig
+          [ // Käufer dominant
             "<p>Wesentliches ist gut vorbereitet, Details bereithalten, falls erforderlich. Agenda kurz und knapp vorab vorschlagen und Feedback erbitten.</p><p>Programmierung: </p><p>Kunde hat die Kontrolle und will schnell zum Ergebnis kommen, sparsam mit Emotionen, auf den Punkt kommen, auf Wesentliches konzentrieren, klar und direkt sprechen, positiv bleiben, nach vorne denken und handeln, wenig Persönliches, eigenes Tempo erhöhen, Gas geben</p><p>Erwartung des Kunden an mich:</p><p>Sparringspartner, schnelle Resultate, Alternativen, mehr Mut und Reibung",
             "Kurzes Warmup, nichts Persönliches anbringen, schnell zur Sache kommen, nicht zu unterwürfig",
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, auf Ungeduld des Kunden achten, nicht in Details verzetteln, mitschreiben",
@@ -127,7 +125,7 @@ const store = createStore({
             "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen, Abschluss nicht mit zusätzlichen Aspekten oder Prüfschleifen verzögern",
             "Versprechen und Zusagen halten, prägnant dokumentieren, Zwischenfeedback geben</p>",
           ],
-          [
+          [ // Käufer initiativ
             "<p>Normal vorbereitet, auf spontane Richtungswechsel vorbereitet sein, weiß der Kunde schon, was er will? Agenda knapp aber alles drin.</p><p>Programmierung: </p><p>Mehr Entusiasmus zeigen als sonst, nicht alle Schleifen des Kunden mitgehen, vom Optimismus des Kunden anstecken lassen, positiv thinking, mit Details verschonen, ich bin für´s Strukturieren zuständig</p><p>Erwartung des Kunden an mich:</p><p>Beziehung zu mir finden, mir vertauen können, mit Kauf persönliche Vorteile haben, mehr Action",
             "Etwas Smalltalk einplanen, lebhafter sein als sonst, Bühne für Selbstdarstellung geben",
             "W-Fragen stellen, kommen lassen, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), mehr Zeit dafür vorsehen, mitschreiben bzw. visualisieren",
@@ -136,7 +134,7 @@ const store = createStore({
             "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
             "Beziehung vertiefen, Zeit für Kundenpflege, will unterhalten werden</p>",
           ],
-          [
+          [ // Käufer stetig
             "<p>Eigene Ziele fixieren, detailliert vorbereitet, auf Kundenbedürfnisse konzentrieren, auf jeden Fall ausführliche Agenda vorab schicken.</p><p>Programmierung:</p><p>Sei du selbst, Feedback geben, wenn etwas in die falsche Richtung läuft, Ziel im Auge behalten, nicht zu viel `kuscheln`, eher die Führung etwas übernehmen</p><p>Erwartung des Kunden an mich:</p><p>Bestätigung, Sicherheit, kann sich mit Kauf auf mich verlassen, Zeit für Austausch",
             "Sei du selbst, Zeit für persönlichen Austausch, evt. etwas Smalltalk",
             "Durchdachte Fragen stellen statt argumentieren, viel aktiv zuhören, öfter zusammenfassen, häufig nachfragen, erste Hilfen signalisieren",
@@ -145,7 +143,7 @@ const store = createStore({
             "Entscheidet wohlüberlegt, gemeinsam zusammenfassen, Restpunkte sauber abarbeiten, verbindliche Empfehlung aussprechen, zu einer Entscheidung führen, Sicherheiten geben, Vertrauen stärken, persönliche Zusagen",
             "Persönliches Feedback, persönliche Verfügbarkeit und weitere Unterstützung anbieten, nach Feedback fragen</p>",
           ],
-          [
+          [ // Käufer gewissenhaft
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Ich habe einen Plan, auf viele Detailfragen vorbereitet sein, Zeit mitbringen, eher formal bleiben, nicht zu emotional, kein `Kuschelfaktor`, Kunde ist vorbereitet, er ist Fachmann</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, Sachlichkeit",
             "Sachlich, formal, etwas distanzierter,  i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Planvoll und methodisch vorgehen, detaillierte Fragen stellen, Bedarf zusammenfassen, sauber dokumentieren",
@@ -155,9 +153,8 @@ const store = createStore({
             "Ergebnisse schriftlich zusammenfassen, zu vereinbartem Termin nachfassen, Vereinbarungen exakt einhalten, eher schriftlich kommunizieren</p>",
           ],
         ],
-        // Verkäufer gewissenhaft
-        [
-          [
+        [// Verkäufer gewissenhaft
+          [ // Käufer dominant
             "<p>Wesentliches ist gut vorbereitet, Details bereithalten, falls erforderlich. Agenda kurz und knapp vorab vorschlagen und Feedback erbitten.</p><p>Programmierung: </p><p>Kunde hat die Kontrolle und will schnell zum Ergebnis kommen, auf den Punkt kommen, klar und direkt sprechen, auf Wesentliches konzentrieren, nach vorne denken und handeln, nicht in Details verlieren, eigenes Tempo erhöhen, Gas geben</p><p>Erwartung des Kunden an mich:</p><p>Sparringspartner, schnelle Resultate, Alternativen, geht nicht gibt´s nicht",
             "Kurzes Warmup, nicht verkrampfen, aktiv bleiben, etwas lockern",
             "Bedarfe direkt erfragen, schnell auf den Punkt bringen, auf Ungeduld des Kunden achten, nicht in Details verzetteln",
@@ -166,7 +163,7 @@ const store = createStore({
             "Entscheidet schnell aufgrund von Fakten, Wahlmöglichkeiten lassen, Kunde entscheidet, schnell und direkt zum Abschluss kommen</p><p>Abschluss nicht mit zusätzlichen Aspekten verzögern, Erfolgsaussichten betonen",
             "Ergebnisse prägnant dokumentieren, Zwischenfeedback geben</p>",
           ],
-          [
+          [ // Käufer initiativ
             "<p>Normal vorbereitet, auf spontane Richtungswechsel vorbereitet sein, weiß der Kunde schon, was er will? Agenda knapp aber alles drin.</p><p>Programmierung: </p><p>Mehr persönliche Anteilnahme zeigen als sonst, nicht alle Schleifen des Kunden mitgehen, positiv thinking, mit Details verschonen, ich bin für´s Strukturieren zuständig, evt. muss ich improvisieren, flexibel bleiben, nicht verkrampfen</p><p>Erwartung des Kunden an mich:</p><p>Beziehung zu mir finden, mir vertauen können, mit Kauf persönliche Vorteile haben, nicht so langweilig",
             "Etwas Smalltalk einplanen, lebhafter sein als sonst, Bühne für Selbstdarstellung geben, Kunde bestimmt den Einstieg in die Sache",
             "W-Fragen stellen, kommen lassen, aktiv zuhören, raushören, was er wirklich will (Kunde weiß es nicht immer), mehr Zeit dafür vorsehen, Details überspringen",
@@ -175,7 +172,7 @@ const store = createStore({
             "Entscheidet spontan, emotionalen Point of Sale spüren, Abschluss aktiv herbeiführen, Empfehlung aussprechen, Zukunft ausmalen, nächste Schritte visualisieren",
             "Beziehung vertiefen, Zeit für Kundenpflege, will unterhalten werden, öfter einfach mal so kontaktieren</p>",
           ],
-          [
+          [ // Käufer stetig
             "<p>Sich auf die Person des Kunden einstellen, detailliert vorbereitet, auf Kundenbedürfnisse konzentrieren, auf jeden Fall ausführliche Agenda vorab schicken.</p><p>Programmierung:</p><p>Interesse an der Person zeigen, erst Emotion, dann Sache, geduldig sein, die weiche Seite mehr zeigen, Nähe zulassen, eher die Führung etwas übernehmen</p><p>Erwartung des Kunden an mich:</p><p>Bestätigung, Sicherheit, kann sich mit Kauf auf mich verlassen, mehr persönliche Nähe",
             "Zeit für persönlichen Austausch, evt. etwas Smalltalk, Nähe erzeugen",
             "Eher Fragen stellen statt argumentieren, viel aktiv zuhören, öfter zusammenfassen, häufig nachfragen, erste Hilfen signalisieren",
@@ -184,7 +181,7 @@ const store = createStore({
             "Entscheidet wohlüberlegt, gemeinsam zusammenfassen, Restpunkte sauber abarbeiten, vorsichtige Empfehlung aussprechen, nicht mit noch mehr Details verwirren, persönliche Bindung stärken, persönliche Zusagen",
             "Persönliches Feedback, persönliche Verfügbarkeit und weitere Unterstützung anbieten, nach Feedback fragen</p>",
           ],
-          [
+          [ // Käufer gewissenhaft
             "<p>Ausführlich informieren,</p><p>evt. Unterlagen vorab schicken, Produktdetails sauber und strukturiert vorbereitet, für mögliche weitere Themen vorbereitet sein, ausführliche Agenda vorab.</p><p>Programmierung:</p><p>Sei du selbst, auf viele Detailfragen vorbereitet sein, Kunde ist vorbereitet, er ist Fachmann, nicht unbedingt Recht haben wollen</p><p>Erwartung des Kunden an mich:</p><p>Ich bin ebenbürtiger Experte, Qualität, mit Kauf keinen Fehler machen, fachsimpeln können",
             "i.d.R. kein Smalltalk, gleich zur Sache kommen, Agenda für heute abstimmen",
             "Planvoll und methodisch vorgehen, detaillierte Fragen stellen, Bedarf zusammenfassen, sauber dokumentieren, nicht im Detail verlieren, vor eigener Interpretation lieber nochmal nachfragen",
