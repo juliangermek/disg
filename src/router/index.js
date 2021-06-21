@@ -24,6 +24,10 @@ const routes = [
     component: () => import('@/views/Evaluation.vue')
   },
   {
+    path: '/impressum',
+    component: () => import('@/views/Impressum.vue')
+  },
+  {
     path: '/test',
     component: () => import('@/views/Test.vue')
   },

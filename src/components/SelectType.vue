@@ -2,7 +2,7 @@
   <h4>{{ title }}</h4>
 
   <ion-item class="selectBackground">
-    <ion-label position="floating">Verkäufertyp</ion-label>
+    <ion-label position="floating">{{ title }}</ion-label>
     <ion-select
       v-bind:class="{
         dominant: selectedType == 'dominant',
@@ -31,7 +31,7 @@
           >Schnelltest</ion-button
         >
       </ion-col>
-      <ion-col>
+      <ion-col style="display: none">
         <ion-button expand="full" color="light" router-link="verify"
           >Verifizieren</ion-button
         >

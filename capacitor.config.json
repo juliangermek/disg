@@ -1,6 +1,6 @@
 {
   "appId": "de.axelgermek.disg",
-  "appName": "disg",
+  "appName": "Sales Assistant",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",
