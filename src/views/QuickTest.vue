@@ -73,8 +73,7 @@
         </p>
         <p>
           Gehen Sie zurück und wählen Sie den Typen dieser Auswahl, der Ihnen am
-          passensten erscheint. Über den Button 'Verifizieren' erhalten Sie
-          hierfür eine Hilfestellung.
+          passensten erscheint.
         </p>
       </div>
     </div>

@@ -29,7 +29,7 @@
     >
 
     <div class="footer">
-      <a href="/impressum">Impressum</a>
+      <a style="text-decoration: none" href="/impressum">Impressum</a>
     </div>
   </base-layout>
 </template>
