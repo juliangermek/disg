@@ -1,26 +1,35 @@
 <template>
   <base-layout page-title="Impressum" defaultBackLink="/home">
-    <div class="center">
-      <img src="../images/axelgermek-logo.png" />
-      <h4>Im Auftrag von</h4>
-      <h4>Axel Germek <a href="axelgermek.de">www.axelgermek.de</a></h4>
-      <h4>Umgesetzt von</h4>
-      <h4>
-        Julian Germek
-        <a href="https://www.linkedin.com/in/julian-germek-593175165/"
-          ><ion-icon :icon="logoLinkedin"></ion-icon
-        ></a>
-      </h4>
-    </div>
+    <ion-grid>
+      <ion-row>
+        <div class="center">
+          <p>Im Auftrag von</p>
+          <img height="130" src="../images/axelgermek-logo.png" />
+          <h4>
+            <a style="text-decoration:none" href="axelgermek.de"
+              >www.axelgermek.de</a
+            >
+          </h4>
+          <br>
+          <p>Design & Umsetzung</p>
+          <h4>
+            Julian Germek
+            <a href="https://www.linkedin.com/in/julian-germek-593175165/"
+              ><ion-icon :icon="logoLinkedin"></ion-icon
+            ></a>
+          </h4>
+        </div>
+      </ion-row>
+    </ion-grid>
   </base-layout>
 </template>
 
 <script>
-import { IonIcon } from "@ionic/vue";
+import { IonGrid, IonRow, IonIcon } from "@ionic/vue";
 import { logoLinkedin } from "ionicons/icons";
 
 export default {
-  components: { IonIcon },
+  components: { IonGrid, IonRow, IonIcon },
   setup() {
     return { logoLinkedin };
   },
@@ -29,6 +38,16 @@ export default {
 
 <style scoped>
 .center {
-  text-align:center
+  text-align: center;
+}
+
+ion-grid {
+  height: 100%;
+}
+ion-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 </style>
