@@ -1,13 +1,11 @@
 <template>
   <base-layout page-title="Auswertung" defaultBackLink="/home">
-    <h6 style="margin-bottom:3px">Ihre Auswahl</h6>
-    <hr style="margin-top:0">
+    <h6 style="margin-bottom:3px; font-size:1.1em">Ihre Auswahl</h6>
     <p>Typ des Verkäufers: <span v-bind:class="sellerType">{{ capitalizeFirstLetter(sellerType) }}</span></p>
     <p>Typ des Käufers: <span v-bind:class="buyerType">{{ capitalizeFirstLetter(buyerType) }}</span></p>
 
     <br>
-    <h6 style="margin-bottom:3px">Ihre Empfehlung</h6>
-    <hr style="margin-top:0">
+    <h6 style="margin-bottom:3px; font-size:1.1em">Ihre Empfehlung</h6>
     <div v-for="(phase, index) in phases" :key="index">
       <ion-card>
         <ion-card-header>
